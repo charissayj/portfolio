@@ -21,10 +21,8 @@
 				
 					<a {% if request.path == '/about' %}class="active nav-link"{% endif %} href="{{url_for('about')}}">About</a>
 				
-					<a {% if request.path == '/projects-technologies' %}class="active nav-link"{% endif %} href="{{url_for('projectsTech')}}">Projects and Technologies</a>
-				
-					<a {% if request.path == '/education' %}class="active nav-link"{% endif %} href="{{url_for('education')}}">Education</a>
-				
+					<a {% if request.path == '/projects' %}class="active nav-link"{% endif %} href="{{url_for('projectsTech')}}">Projects</a>
+					
 					<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navCollapse()">&#9776;</a>
 				</nav>
 			</div>
