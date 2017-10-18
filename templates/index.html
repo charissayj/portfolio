@@ -6,76 +6,105 @@
 	<body>
 		{% extends "layout.html" %}
 		{% block content %}
-		<header>
-			<h1>Welcome!</h1>
-			<p>I'm Charissa, a full-stack web developer. Some frameworks I'm, familiar with are MEAN stack, ruby on rails, and python with Django or Flask (like this site!). I'm currently looking for a position as a full-stack, front end, or back end developer, but I am open to new opportunities! Go ahead and check out the rest of my site to see what I can do <span>OR</span> <a href="mailto:charissayjohnson@gmail.com">contact</a> me directly</p>
-		</header>
-		<aside>
-			<h3>Let's get in touch!</h3>
-			<ul>
-				<li><a href="https://www.linkedin.com/in/charissa-johnson-y/">LinkedIn</a></li>
-				<li><a href="mailto:charissayjohnson@gmail.com">Email</a></li>
-			</ul>
-			<p>While I try my best to keep this site up to date, you'll find way more projects - more frequently - on my <a href="https://github.com/charissayj">GitHub</a> account. Go ahead and check it out!</p>
-		</aside>
-		<section>
-			<img src="{{url_for('static', filename='img/headshot.jpg')}}" class="img-thumbnail"/>
-		</section>
-		<main>
-			<h1>Skills</h1>
-			<p>Front End Technologies</p>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JQuery</li>
-				<li>AJAX</li>
-				<li>JSON</li>
-				<li>HTTP Request Response Cycle</li>
-			</ul>
-			<p>Languages</p>
-			<ul>
-				<li>Python</li>
-				<li>Ruby</li>
-				<li>JavaScript</li>
-			</ul>
-			<p>Databases</p>
-			<ul>
-				<li>SQL (mySQL, SQLite)</li>
-				<li>NoSQL (mongoDB, mongoose.js)</li>
-				<li>PostgreSQL</li>
-			</ul>
-			<p>Frameworks</p>
-			<ul>
-				<li>Ruby on Rails</li>
-				<li>Express/Socket.io</li>
-				<li>Angular</li>
-				<li>Django</li>
-				<li>Flask</li>
-			</ul>
-			<p>Methodology</p>
-			<ul>
-				<li>OOP</li>
-				<li>MVC</li>
-				<li>RESTful Architecture</li>
-				<li>TDD (RSpec)</li>
-				<li>EDD</li>
-				<li>CRUD Operations</li>
-			</ul>
-			<p>Hosting</p>
-			<ul>
-				<li>AWS</li>
-				<li>Heroku</li>
-			</ul>
-			<p>Tools</p>
-			<ul>
-				<li>Node.js</li>
-				<li>Terminal/Console</li>
-				<li>Postman</li>
-				<li>Vagrant</li>
-				<li>MAMP</li>
-				<li>mySQL Workbench</li>
-			</ul>
-		</main>
+			<div class="container-fluid">
+				<div class="jumbotron">
+					<h1 class="display-3">Welcome!</h1>
+					<p class="lead">I'm Charissa, a full-stack web developer. Some frameworks I'm, familiar with are MEAN stack, ruby on rails, and python with Django or Flask (like this site!). I'm currently looking for a position as a full-stack, front end, or back-end developer, but I am open to new opportunities! Go ahead and check out the rest of my site to see what I can do <span>OR</span> <a href="mailto:charissayjohnson@gmail.com">contact</a> me directly</p>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="{{url_for('static', filename='img/headshot.jpg')}}" class="img-thumbnail"/>
+					</div>
+					<div class="col-sm-6">
+						<h3>Let's Get In Touch!</h3>
+						<ul>
+							<li>
+								<a href="https://www.linkedin.com/in/charissa-johnson-y/">LinkedIn</a>
+							</li>
+							<li>
+								<a href="mailto:charissayjohnson@gmail.com">Email</a>
+							</li>
+							<li>
+								<a href="https://github.com/charissayj">GitHub</a>
+							</li>
+						</ul>
+						<h4>My Skills</h4>
+						<div class="row">
+							<div class="col-sm-4">
+								<p>Front-End</p>
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JQuery</li>
+									<li>AJAX</li>
+									<li>JSON</li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<p>Languages</p>
+								<ul>
+									<li>Python</li>
+									<li>Ruby</li>
+									<li>JavaScript</li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<p>Databases</p>
+								<ul>
+									<li>SQL (mySQL, SQLite)</li>
+									<li>NoSQL (mongoDB, mongoose.js)</li>
+									<li>PostgreSQL</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<p>Frameworks</p>
+								<ul>
+									<li>Ruby on Rails</li>
+									<li>Express/Socket.io</li>
+									<li>Angular</li>
+									<li>Django</li>
+									<li>Flask</li>
+								</ul>
+							</div>
+							<div class="col-sm-4">
+								<p>Methodology</p>
+								<ul>
+									<li>OOP</li>
+									<li>MVC</li>
+									<li>RESTful Architecture</li>
+									<li>TDD (RSpec)</li>
+									<li>EDD</li>
+									<li>CRUD Operations</li>
+								</ul>
+							</div>	
+							<div class="col-sm-4">
+								<p>Tools</p>
+								<ul>
+									<li>Node.js</li>
+									<li>Terminal/Console</li>
+									<li>Postman</li>
+									<li>Vagrant</li>
+									<li>MAMP</li>
+									<li>mySQL Workbench</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<p>Hosting</p>
+								<ul>
+									<li>AWS</li>
+									<li>Heroku</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		{% endblock %}
 	</body>
 </html>
