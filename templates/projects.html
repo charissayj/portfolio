@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projects</title>
+	</head>
+	<body>
+		{% extends "layout.html" %}
+		{% block content %}
+			<h1>Projects</h1>
+			<h3>Polls</h3>
+			<a href="https://github.com/charissayj/polls">GitHub</a>
+			<p>This project was created with MEAN stack and uses CRUD operations. I build my own server using Express.js, used Mongoose for the database, and Angular 4 for the front end. This project allows a user to log in, create poll with 4 possible answers, then other users, as well as the creator, can vote on the poll options. The polls can also be deleted, but only by the user that created the poll</p>
+			<img src="{{url_for('static', filename='img/polls.png')}}" class="img-thumbnail"/>
+			<img src="{{url_for('static', filename='img/poll.png')}}" class="img-thumbnail"/>
+
+			<h3>Social Groups</h3>
+			<a href="https://github.com/charissayj/Social-Groups">GitHub</a>
+			<p>Created using Ruby on Rails, PostgreSQL, RESTful routing, and some basic CRUD operations, this is a porject that would allow users to log in and create groups or clubs for other users to join. Once the user creates a group, they are immediately saved as being a member of the group. Other users can join and leave the groups that have been create, as well as make their own groups</p>
+			<img src="{{url_for('static', filename='img/organizations.png')}}" class="img-thumbnail"/>
+			<img src="{{url_for('static', filename='img/organization.png')}}" class="img-thumbnail"/>
+
+			<h3>Travel Buddy</h3>
+			<a href="https://github.com/charissayj/travel-buddy">GitHub</a>
+			<p>Created using the Django framework, SQLite, python, RESTful routing, and some basic CRUD functionality. This porject allows users to create an account and make travel plans with other users. Each user can create a destination and a plan for the destination. This will then be shared on the main page and other users can chose to join the trip. Users can see all trips as well as trips they are not part of. The trip functionality was created using a many-to-many relationship between database tables.</p>
+			<img src="{{url_for('static', filename='img/travels.png')}}" class="img-thumbnail"/>
+			<img src="{{url_for('static', filename='img/travel.png')}}" class="img-thumbnail"/>
+
+			<h3>Job Scraper</h3>
+			<a href="https://github.com/charissayj/Job-Scraper"></a>
+			<p>This project is a little different in that it doesn't have a front end. Using python and the Beautiful Soup library this web crawler grabs job postings from popular job search sites and stores them in a csv file. I do have plans to make this into an interactive site and will keep this page updated with any progress I make.</p>
+			<img src="{{url_for('static', filename='img/jobscraper.png')}}" class="img-thumbnail"/>
+		{% endblock %}
+	</body>
+</html>
