@@ -1,0 +1,25 @@
+.carousel{
+    margin-top: 20px;
+    height: 37.5em;
+    width: 40.625em;
+}
+.carousel-item img{
+    height: 37.5em;
+    width: 40.625em;
+}
+span{
+    font-weight: bold;
+}
+.whoAmI{
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media all and (max-width: 800px){
+    .carousel{
+        width: 100%;
+    }
+    .carousel-item img{
+        height: 50%;
+    }
+}
