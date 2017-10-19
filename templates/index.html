@@ -10,89 +10,134 @@
 				<div class="jumbotron">
 					<h1 class="display-3">Welcome!</h1>
 					<p class="lead">I'm Charissa, a full-stack web developer. Some frameworks I'm, familiar with are MEAN stack, ruby on rails, and python with Django or Flask (like this site!). I'm currently looking for a position as a full-stack, front end, or back-end developer, but I am open to new opportunities! Go ahead and check out the rest of my site to see what I can do <span>OR</span> <a href="mailto:charissayjohnson@gmail.com">contact</a> me directly</p>
+					<p class="lead">You can also find me on <a href="https://www.linkedin.com/in/charissa-johnson-y/">LinkedIn</a>
+					 or <a href="https://github.com/charissayj">GitHub</a>
+					</p>
 				</div>
 			</div>
+			<!-- Contact -->
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-6">
-						<img src="{{url_for('static', filename='img/headshot.jpg')}}" class="img-thumbnail"/>
+					<div class="col-xs-4">
+						<img src="{{url_for('static', filename='img/headshot.jpg')}}" class="img-thumbnail" id="img-main"/>
 					</div>
-					<div class="col-xs-6">
-						<h3>Let's Get In Touch!</h3>
-						<ul>
-							<li>
-								<a href="https://www.linkedin.com/in/charissa-johnson-y/">LinkedIn</a>
-							</li>
-							<li>
-								<a href="mailto:charissayjohnson@gmail.com">Email</a>
-							</li>
-							<li>
-								<a href="https://github.com/charissayj">GitHub</a>
-							</li>
-						</ul>
-						<h4>My Skills</h4>
-						<div class="row">
-							<div class="col-xs-4">
-								<p>Front-End</p>
-								<ul>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>JQuery</li>
-									<li>AJAX</li>
-									<li>JSON</li>
-								</ul>
-							</div>
-							<div class="col-xs-4">
-								<p>Languages</p>
-								<ul>
-									<li>Python</li>
-									<li>Ruby</li>
-									<li>JavaScript</li>
-								</ul>
-							</div>
-							<div class="col-xs-4">
-								<p>Databases</p>
-								<ul>
-									<li>SQL (mySQL, SQLite)</li>
-									<li>NoSQL (mongoDB, mongoose.js)</li>
-									<li>PostgreSQL</li>
-								</ul>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-4">
-								<p>Frameworks</p>
-								<ul>
-									<li>Ruby on Rails</li>
-									<li>Express/Socket.io</li>
-									<li>Angular</li>
-									<li>Django</li>
-									<li>Flask</li>
-								</ul>
-							</div>
-							<div class="col-xs-4">
-								<p>Methodology</p>
-								<ul>
-									<li>OOP</li>
-									<li>MVC</li>
-									<li>RESTful Architecture</li>
-									<li>TDD (RSpec)</li>
-									<li>EDD</li>
-									<li>CRUD Operations</li>
-								</ul>
-							</div>	
-							<div class="col-xs-4">
-								<p>Tools</p>
-								<ul>
-									<li>Node.js</li>
-									<li>Terminal/Console</li>
-									<li>Postman</li>
-									<li>Vagrant</li>
-									<li>MAMP</li>
-									<li>mySQL Workbench</li>
-								</ul>
-							</div>
-						</div>
+					<div id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingOne">
+					      <h5 class="mb-0">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Front-End
+					        </a>
+					      </h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="card-block">
+					        <ul>
+					        	<li>HMTL &amp; CSS</li>
+					        	<li>JQuery</li>
+					        	<li>AJAX</li>
+					        	<li>JSON</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingTwo">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Languages
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+					      <div class="card-block">
+					        <ul>
+					        	<li>Python</li>
+					        	<li>Ruby</li>
+					        	<li>JavaScript</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingThree">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Databases
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+					      <div class="card-block">
+					        <ul>
+					        	<li>SQL (MySQL, SQLite)</li>
+					        	<li>NoSQL (MongoDB)</li>
+					        	<li>PostgreSQL</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingFour">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					          Frameworks
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+					      <div class="card-block">
+					        <ul>
+					        	<li>Ruby on Rails</li>
+					        	<li>MEAN</li>
+					        	<li>Django</li>
+					        	<li>Flask</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingFive">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					          Methodology
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+					      <div class="card-block">
+					        <ul>
+					        	<li>OOP</li>
+					        	<li>MVC</li>
+					        	<li>RESTful Architecture</li>
+					        	<li>TDD (RSpec)</li>
+					        	<li>EDD</li>
+					        	<li>CRUD Operations</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingSix">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+					          Tools
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+					      <div class="card-block">
+					        <ul>
+					        	<li>Node.js</li>
+					        	<li>Terminal/Console</li>
+					        	<li>Postman</li>
+					        	<li>Vagrant</li>
+					        	<li>MAMP</li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
 					</div>
 				</div>
 			</div>

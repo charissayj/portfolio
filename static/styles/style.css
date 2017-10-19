@@ -1,3 +1,15 @@
+/* Main Page */
+#img-main{
+    height: 30rem;
+    margin-left: 10px;
+}
+#accordion{
+    margin-top: -30px;
+}
+#accordion a{
+    color: black;
+}
+
 /* About Page */
 .carousel{
     margin-top: 4.063em;
@@ -32,6 +44,21 @@ span{
 .card-img-top{
     width: 20rem;
     height: 12rem;
+}
+.projects{
+    margin: 1rem;
+}
+.projects .btn{
+    background-color: #2a2b2c;
+    color: white;
+}
+#project-header{
+    margin-left: 40%;
+    padding-top: 10%
+}
+#project-header{
+    color: white;
+    text-shadow: 2px 2px #324B52;
 }
 /* Media Queries */
 /* About Page */
