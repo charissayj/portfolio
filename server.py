@@ -14,5 +14,5 @@ def projects():
 def about():
 	return render_template('about-charissa.html')
 
-if __nam__ == '__main__':
+if __name__ == '__main__':
 	app.run()
