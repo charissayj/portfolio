@@ -73,6 +73,7 @@ span{
         margin: auto;
         padding-right: 2em;
     }
+    /* Why is this change not registering on Heroku?*/
     .card{
         margin: 0;
     }
