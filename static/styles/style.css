@@ -69,4 +69,14 @@ span{
     .carousel-item img{
         height: 50%;
     }
+    #accordion{
+        margin-left: -1.250em;
+    }
+    .card{
+        margin: 0;
+    }
+    #project-header{
+        padding-top: 3em;
+        margin-left: 3em;
+    }
 }
