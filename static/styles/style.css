@@ -70,7 +70,8 @@ span{
         height: 50%;
     }
     #accordion{
-        margin-left: -1.250em;
+        margin: auto;
+        padding-right: 2em;
     }
     .card{
         margin: 0;
