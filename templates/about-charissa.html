@@ -8,14 +8,9 @@
 		{% block content %}
 			<div class="container-fluid">
 				<div class="row">
-					<!-- Resize pictures for screen sizes of 480px, 481px to 1023px and 1024px -->
+					<!-- Hide carousel for phone screens -->
 					<div class="col-xs-12">
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-							</ol>
+						<div id="carousel" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
 									<img class="d-block img-fluid" src="{{url_for('static', filename='img/baseball.png')}}" alt="First slide">
@@ -27,22 +22,16 @@
 									<img class="d-block img-fluid" src="{{url_for('static', filename='img/ruby.png')}}" alt="Third slide">
 								</div>
 							</div> <!-- end inner -->
-							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-							</a>
 						</div> <!-- end carousel -->
 					</div> <!-- end col -->
 				</div> <!-- end row -->
 				<div class="row">
-					<div class="col-md-6" id="about">
+					<div class="col-md-12" id="about">
 						<h1>So, Who Am I?</h1>
 						<p>I am a full-stack web developer with experience in Ruby on Rails, Python with Flask and Django, and MEAN. I learned many of my technical skills from Coding Dojo in Dallas. Coding Dojo is an immersive 14-week coding boot camp that teaches students the languages and tools they need to know to create websites from the front end to the back end. Prior to Coding Dojo, I completed over 140 credit hours at DeVry University and American Military University where I initially sought a degree in Biomedical Sciences but later switched to Computer Information Systems.</p>
+						<img class="img-fluid phones" src="{{url_for('static', filename='img/formation-sm.png')}}" alt="Image of Charissa with military members">
 						<p><span>Why the switch?</span> For the past eight years, I have served in the US military as a medic. It was a great job, I met plenty of great people, and learned a lot. As my time in the military drew to an end I knew that it was time for me to move on from the medical field and pursue a career that I was more passionate about. Enter software development. I always enjoyed things like solving puzzles and building things, but I had never considered that I could have a career doing basically those things. Once I learned more about software and web development and realized that I could have a challenging and fulfilling career building (and sometimes breaking) software and websites I knew I had found my passion. Even in my free time, you can find me writing code!</p>
+						<img class="img-fluid phones" src="{{url_for('static', filename='img/baseball-sm.png')}}" alt="Charissa(right) and a friend(left) at the Seattle mariners baseball stadium">
 					</div>
 				</div>
 				<div>

@@ -47,4 +47,41 @@ span{
     text-shadow: 2px 2px #324B52;
 }
 
+@media all and (max-width: 480px) {
+    /* Index */
+    #img-main{
+        width: 10rem;
+        margin-left: 100%;
+    }
+    /* About */
+    .carousel{
+        display: none;
+    }
+    /* Projects */
+    .view{
+        height: 10rem;
+    }
+    #project-header{
+        padding-top: 3rem;
+        padding-left: 10rem;
+    }
+}
 
+@media all and (min-width:960px){
+    /* Index */
+    #img-main{
+        width: 15rem;
+    }
+    /* About */
+    .phones{
+        display: none;
+    }
+    /* Projects */
+    .view{
+        height: 15rem;
+    }
+    #project-header{
+        padding-top: 6rem;
+        padding-left: 25rem;
+    }
+}
