@@ -1,84 +1,50 @@
-/* Main Page */
-#img-main{
-    height: 30rem;
-    margin-left: 10px;
-}
-#accordion{
-    margin-top: -30px;
+/* Universal */
+.main{
+     background-color: rgb(247, 248, 249)
 }
 #accordion a{
     color: black;
 }
-
-/* About Page */
-.carousel{
-    margin-top: 4.063em;
-    height: 31.250em;
-    width: 34.375em;
+.card-block{
+    background-color: rgb(247, 248, 249)
 }
-.carousel-item img{
-    height: 31.250em;
-    width: 34.375em;
+.jumbotron.jumbotron-fluid{
+    color: white;
+    background: url("/static/img/ocean.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.jumbo-container{
+    background-color:rgba(0, 0, 0, 0.43);
+}
+.jumbotron a{
+    color: aliceblue;
+}
+.jumbotron a:hover{
+    color: white;
+}
+ul{
+    list-style: none;
 }
 span{
     font-weight: bold;
 }
-.whoAmI{
-    margin-top: 0.625em;
-}
-
-/* Projects Page */
 .view{
-    height: 18.75em;
     background: url("/static/img/code.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
-.card{
-    width: 20rem;
-    margin: 10%;
-}
-.card-img-top{
-    width: 20rem;
-    height: 12rem;
-}
-.projects{
-    margin: 1rem;
-}
 .projects .btn{
     background-color: #2a2b2c;
     color: white;
 }
 #project-header{
-    margin-left: 40%;
-    padding-top: 10%
-}
-#project-header{
     color: white;
     text-shadow: 2px 2px #324B52;
 }
-/* Media Queries */
-/* About Page */
-@media all and (max-width: 800px){
-    .carousel{
-        width: 100%;
-    }
-    .carousel-item img{
-        height: 50%;
-    }
-    #accordion{
-        margin: auto;
-        padding-right: 2em;
-    }
-    /* Why is this change not registering on Heroku?*/
-    .card{
-        margin: 0;
-    }
-    #project-header{
-        padding-top: 3em;
-        margin-left: 3em;
-    }
-}
+
+

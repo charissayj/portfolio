@@ -1,0 +1,5 @@
+1. Resize images for small, medium, and large screens
+2. Make accordion panels clickable
+3. Add in resume, along with js prompt to confirm download
+4. Re-design with mobile first approach
+5. Allow desktop version to show only pictures of projects, then show a description on mouse-over
